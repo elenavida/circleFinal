@@ -1,0 +1,44 @@
+* {
+  font-family: roboto;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  width: 60px;
+  height: 18px;
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.nav-a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+}
+.button-nav {
+  background-color: blue;
+  color: white;
+  border: none;
+}
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.hero-text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 60px;
+  flex-direction: column;
+}
+.button-touch {
+  background-color: blue;
+}
+.hero-images {
+  display: flex;
+}
