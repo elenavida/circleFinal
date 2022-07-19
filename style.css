@@ -40,5 +40,41 @@
   background-color: blue;
 }
 .hero-images {
-  display: flex;
+  width: 50%;
+  height: 650px;
+  position: relative;
+}
+.hero-image1 {
+  width: 270px;
+  position: absolute;
+  right: 60%;
+  top: 0%;
+  left: -10%;
+}
+.hero-image1 img {
+  width: 300px;
+  height: auto;
+}
+.hero-image2 {
+  position: absolute;
+  width: 570px;
+  bottom: -10%;
+  left: 140%;
+}
+.hero-image2 img {
+  width: 300px;
+  height: auto;
+}
+.hero-image3 {
+  width: 270px;
+  /* position: absolute;
+  bottom: -20%;
+  left: 70%; */
+}
+.hero-image3 img {
+  width: 570px;
+  height: auto;
+}
+
+.clients-logos {
 }
