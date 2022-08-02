@@ -207,6 +207,9 @@ nav > ul > li > a.active {
 #projects {
   margin-top: 200px;
 }
+#projects h3 {
+  margin-bottom: 70px;
+}
 .projects {
   display: flex;
   flex-direction: row;
@@ -439,31 +442,85 @@ footer {
   justify-content: space-between;
   margin-bottom: 50px;
 }
-
-.abstract-header {
-  width: 1100px;
+#project {
+  margin-top: 140px;
+}
+#project h1 {
+  margin-bottom: 0;
+}
+#project .subheading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+#project .completed-date {
+  color: var(--color-neutral-dark);
+}
+#project .completed-date span {
+  color: var(--color-neutral-medium);
+}
+.project-header {
+  width: 100%;
   height: 444px;
-  background-image: url("/assets/project-assets/projects-section/1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin-bottom: 70px;
+}
+.simplify-header {
+  background-image: url("/assets/project-assets/projects-section/1.jpg");
 }
 .dashcoin-header {
-  width: 1100px;
-  height: 444px;
   background-image: url("/assets/project-assets/projects-section/2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .vectorify-header {
-  width: 1100px;
-  height: 444px;
   background-image: url("/assets/project-assets/projects-section/3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
-.simple-text {
-  padding-top: 200px;
+
+#contact {
+  margin-top: 140px;
+}
+#contact fieldset {
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+#contact fieldset fieldset {
+  margin-bottom: 0;
+}
+#contact fieldset label {
+  margin-bottom: 10px;
+}
+#contact input::placeholder,
+#contact textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+}
+#contact fieldset input,
+#contact fieldset textarea {
+  height: 70px;
+  border: 0;
+  padding: 20px;
+  background-color: #6b708d1a;
+}
+#contact fieldset textarea {
+  height: 200px;
+  resize: none;
+}
+#contact fieldset.horizontal-split {
+  flex-direction: row;
+}
+#contact fieldset.horizontal-split fieldset {
+  flex-basis: 50%;
+}
+#contact fieldset.horizontal-split fieldset + fieldset {
+  margin-left: 40px;
+}
+#contact button {
+  width: 100%;
+  height: 80px;
 }
