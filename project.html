@@ -17,7 +17,8 @@
       rel="stylesheet"
     />
     <script src="/hamburger.js"></script>
-    <script src="/contact.js"></script>
+    <script src="/load-project.js"></script>
+    <script src="/load-projects.js"></script>
   </head>
   <body class="body-regular">
     <nav>
@@ -26,7 +27,7 @@
         <li>
           <a href="/">Home</a>
         </li>
-        <li><a href="/project.html">Projects</a></li>
+        <li><a class="active" href="/project.html">Projects</a></li>
         <li class="last">
           <a href="#">Services</a>
         </li>
@@ -36,51 +37,33 @@
       >
       <button class="button-hamburger material-icons">menu</button>
     </nav>
-    <section id="contact">
-      <form>
-        <h1>Contact Us</h1>
-        <fieldset>
-          <label for="name" class="body-regular">Full Name *</label>
-          <input
-            class="headline-regular"
-            type="text"
-            name="name"
-            placeholder="Enter your full name"
-            required
-          />
-        </fieldset>
-
-        <fieldset class="horizontal-split">
-          <fieldset>
-            <label for="email" class="body-regular">Email</label>
-            <input
-              class="headline-regular"
-              type="email"
-              name="email"
-              placeholder="Enter your email address"
-            />
-          </fieldset>
-          <fieldset>
-            <label for="phone" class="body-regular">Phone</label>
-            <input
-              class="headline-regular"
-              type="tel"
-              name="phone"
-              placeholder="Enter your phone number"
-            />
-          </fieldset>
-        </fieldset>
-
-        <fieldset>
-          <label for="message" class="body-regular">Message</label>
-          <textarea
-            class="headline-regular"
-            placeholder="Write your message here..."
-            name="message"
-          ></textarea>
-        </fieldset>
-        <button class="button-primary">Submit</button>
-      </form>
+    <section id="project">
+      <h1></h1>
+      <div class="subheading">
+        <p class="subheading-title body-medium"></p>
+        <p class="completed-date body-regular">
+          Completed on <span>2/2/22</span>
+        </p>
+      </div>
+      <div>
+        <div class="project-header simplify-header"></div>
+        <p class="project-body body-regular"></p>
+      </div>
+    </section>
+    <section id="projects">
+      <h3>Other Projects</h3>
+      <div class="projects"></div>
+    </section>
+    <section id="newsletter">
+      <h3>Do you have any questions?</h3>
+      <p class="body-regular">Let us help you!</p>
+      <div class="email-subscribe">
+        <div class="email-input">
+          <img class="icon-mail" src="/assets/newsletter/icon/mail.svg" />
+          <input type="email" placeholder="Enter your email" />
+        </div>
+        <button class="button-subscribe button-primary">Subscribe</button>
+      </div>
     </section>
     <footer>
       <div class="footer-circle">

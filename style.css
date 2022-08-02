@@ -134,6 +134,58 @@ nav > ul > li > a {
 nav > ul > li > a.active {
   color: var(--color-primary-default);
 }
+nav .button-hamburger {
+  display: none;
+}
+@media (max-width: 800px) {
+  nav {
+    padding: 20px;
+  }
+  .button-contact {
+    display: none;
+  }
+  nav .button-hamburger {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    display: block;
+    border: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: transparent;
+  }
+  nav.open .button-hamburger {
+    background-color: var(--color-neutral-medium);
+  }
+  nav > ul {
+    display: none;
+  }
+  nav.open > ul {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  nav.open > ul > li {
+    width: 100%;
+    height: 60px;
+    background-color: var(--color-neutral-medium);
+    padding: 0 20px;
+  }
+  nav.open > ul > li > a {
+    line-height: 60px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: var(--color-neutral-dark);
+  }
+}
+
 #hero {
   display: flex;
   flex-direction: row;
