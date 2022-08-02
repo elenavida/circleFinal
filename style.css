@@ -18,6 +18,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 body {
   background-color: var(--color-neutral-light);
@@ -25,6 +26,7 @@ body {
   color: var(--color-neutral-medium);
   max-width: 1100px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 h1,
 h2,
@@ -135,11 +137,14 @@ nav > ul > li > a.active {
 #hero {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   margin-top: 100px;
+  justify-content: space-between;
 }
 .hero-text {
-  width: 530px;
+  min-width: 475px;
+  max-width: 530px;
 }
 .hero-text h1 {
   margin-bottom: 30px;
@@ -159,7 +164,8 @@ nav > ul > li > a.active {
 }
 .hero-images {
   position: relative;
-  width: 570px;
+  min-width: 475px;
+  max-width: 570px;
   height: 637px;
 }
 .hero-guy {
@@ -192,16 +198,45 @@ nav > ul > li > a.active {
   width: 300px;
   height: auto;
 }
+@media (max-width: 1060px) {
+  #hero {
+    justify-content: space-around;
+  }
+  .hero-text {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .hero-text p {
+    width: auto;
+  }
+  .hero-image1,
+  .hero-image2 {
+    display: none;
+  }
+}
 
 #client-logos {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   height: auto;
   position: relative;
   margin-top: 130px;
 }
 #client-logos img {
   filter: grayscale(100%);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 800px) {
+  .client-logo {
+    text-align: center;
+    flex-basis: 50%;
+    margin-bottom: 40px;
+  }
+  .logo-amazon {
+    display: none;
+  }
 }
 
 #projects {
@@ -213,11 +248,13 @@ nav > ul > li > a.active {
 .projects {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .project {
   background-color: white;
-  width: 340px;
+  margin-bottom: 40px;
+  max-width: 320px;
 }
 .project-title {
   color: var(--color-neutral-dark);
@@ -230,7 +267,7 @@ nav > ul > li > a.active {
   margin-bottom: 54px;
 }
 .project img {
-  width: auto;
+  width: 100%;
   height: 240px;
 }
 
@@ -244,7 +281,7 @@ nav > ul > li > a.active {
   background-color: var(--color-neutral-dark);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   padding: 120px 110px;
   text-align: center;
   display: flex;
@@ -324,6 +361,25 @@ nav > ul > li > a.active {
   right: 72px;
   bottom: 73px;
 }
+@media (max-width: 1280px) {
+  #testimonial {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  #testimonial h3 {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .testimonial-text {
+    width: auto;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 800px) {
+  .memojis {
+    display: none;
+  }
+}
 
 #services {
   margin-top: 196px;
@@ -335,7 +391,9 @@ nav > ul > li > a.active {
 }
 .service {
   background-color: white;
-  width: 340px;
+  min-width: 200px;
+  max-width: 340px;
+  margin-right: 20px;
   padding: 40px 30px;
 }
 .service-icon {
@@ -357,11 +415,22 @@ nav > ul > li > a.active {
 .service p {
   margin-bottom: 36px;
 }
+@media (max-width: 800px) {
+  .services {
+    display: block;
+  }
+  .service {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
 #newsletter {
   background-color: #ffc600;
   padding: 136px 110px 137px;
   margin-top: 200px;
-  height: 500px;
+  min-height: 500px;
   text-align: center;
 }
 #newsletter h3 {
@@ -371,26 +440,28 @@ nav > ul > li > a.active {
   color: var(--color-neutral-dark);
   margin-bottom: 50px;
 }
-.email-subscribe {
-  position: relative;
-}
 .icon-mail {
   position: absolute;
-  left: 156px;
+  left: 25px;
   top: 25px;
   width: 30px;
   height: 30px;
 }
 .button-subscribe {
-  width: 198px;
+  min-width: 198px;
   height: 80px;
 }
+#newsletter .email-input {
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
 #newsletter input {
+  padding-left: 70px;
   width: 393px;
   height: 80px;
   border: 0;
-  margin-right: 20px;
-  padding-left: 70px;
 }
 #newsletter input,
 #newsletter input::placeholder {
@@ -405,6 +476,17 @@ nav > ul > li > a.active {
   align-items: center;
   padding: 50px;
   flex-direction: column;
+}
+@media (max-width: 895px) {
+  #newsletter {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  #newsletter input,
+  .email-input,
+  .button-subscribe {
+    width: 100%;
+  }
 }
 
 footer {
@@ -421,9 +503,6 @@ footer {
   height: 30px;
   margin-bottom: 30px;
 }
-.footer-circle p {
-  width: 260px;
-}
 
 .footer-links {
   width: 435px;
@@ -434,6 +513,15 @@ footer {
 .footer-links a {
   color: var(--color-neutral-medium);
   flex-basis: 33%;
+}
+@media (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-circle img {
+    margin: 0 auto 20px;
+  }
 }
 
 .project-types-single {
