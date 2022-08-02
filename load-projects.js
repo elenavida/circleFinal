@@ -7,7 +7,7 @@ function getProjectHTML(id, title, description, url) {
                 ${description}
             </p>
             <a
-                class="headline-regular"
+                class="learn-more-link headline-regular"
                 href="${url}"
                 >Learn More</a
             >
