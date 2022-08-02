@@ -9,19 +9,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&family=Roboto+Condensed:ital,wght@0,700;1,400&family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body>
-    <nav class="navbar">
+  <body class="body-regular">
+    <nav>
       <img class="logo" src="/assets/Circle logo.png" alt="circle logo" />
-      <div class="nav-a">
-        <a href="https://circle-agency-35d27e.webflow.io/">Home</a>
-        <a href="https://circle-agency-35d27e.webflow.io/">Projects</a>
-        <a href="https://circle-agency-35d27e.webflow.io/">Services</a>
+      <ul>
+        <li><a class="active" href="https://circle-agency-35d27e.webflow.io/">Home</a></li>
+        <li><a href="https://circle-agency-35d27e.webflow.io/">Projects</a></li>
+        <li><a href="https://circle-agency-35d27e.webflow.io/">Services</a></li>
       </div>
-      <button class="button-nav">Contact Us</button>
+      <button class="button-contact">Contact Us</button>
     </nav>
     <section class="hero-content">
       <div class="hero-text">
@@ -30,114 +30,170 @@
           Circle is a digital design and development studio. We design and
           develop astonishing websites and mobile apps.
         </p>
-        <button class="button-touch">get in touch</button>
-        <button>See our work</button>
+        <div>
+          <button class="button-touch headline-medium">Get in touch</button>
+          <button class="button-work headline-medium">See our work</button>
+        </div>
       </div>
       <div class="hero-images">
+        <div class="hero-guy">
+          <img src="assets/Hero Image.png" alt="Hero Image" />
+        </div>
         <div class="hero-image1">
           <img src="/assets/Card 1.png" alt="card1" />
         </div>
         <div class="hero-image2">
           <img src="assets/Card 2.png" alt="card2" />
         </div>
-        <div class="hero-image3">
-          <img src="assets/Hero Image.png" alt="Hero Image" />
+      </div>
+    </section>
+    <section class="client-logos">
+      <img
+        class="logo-airbb"
+        src="/assets/project-assets/logos/airbnb-logo.svg"
+        alt="logo-airbb"
+      />
+      <img
+        class="logo-google"
+        src="/assets/project-assets/logos/google-logo.svg"
+        alt="logo-google"
+      />
+      <img
+        class="logo-microsoft"
+        src="/assets/project-assets/logos/microsoft-logo.svg"
+        alt="logo-microsoft"
+      />
+      <img
+        class="logo-fedex"
+        src="/assets/project-assets/logos/fedex-logo.svg"
+        alt="logo-fedex"
+      />
+      <img
+        class="logo-amazon"
+        src="/assets/project-assets/logos/amazon-logo.svg"
+        alt="logo-amazon"
+      />
+    </section>
+    <section id="projects">
+      <h3>Recent Projects</h3>
+      <div class="projects">
+        <div class="project">
+          <img src="/assets/Rectangle 1.png" alt="simplify image" />
+          <div class="project-title body-medium">Simplify</div>
+          <p class="headline-regular">UI Design & App Development</p>
+          <a href="https://circle-agency-35d27e.webflow.io/projects/simplify"
+            >Learn More</a
+          >
+        </div>
+        <div class="project">
+          <img src="/assets/Rectangle 2.png" alt="dashcoin image" />
+          <div class="project-title body-medium">Dashcoin</div>
+          <p class="headline-regular">Web Development</p>
+          <a href="https://circle-agency-35d27e.webflow.io/projects/dashcoin"
+            >Learn More</a
+          >
+        </div>
+        <div class="project">
+          <img src="/assets/Rectangle 3.png" alt="vectorify image" />
+          <div class="project-title body-medium">Vectorify</div>
+          <p class="headline-regular">User Experience Design</p>
+          <a href="https://circle-agency-35d27e.webflow.io/projects/vectorify"
+            >Learn More</a
+          >
         </div>
       </div>
     </section>
-    <section>
-      <img
-        class="clients-logos"
-        src="assets/Clients (Grayscale).png"
-        alt="Clients Logos"
-      />
-    </section>
-    <section>
-      <h2>Recent Projects</h2>
-      <div>
-        <h2>Simplify</h2>
-        <p>UI Design & App Development</p>
-        <img src="/assets/Rectangle 1.png" alt="simplify image" />
-        <a href="https://circle-agency-35d27e.webflow.io/projects/simplify"
-          >Learn More</a
-        >
-      </div>
-      <div>
-        <h2>Dashcoin</h2>
-        <p>Web Development</p>
-        <img src="/assets/Rectangle 2.png" alt="dashcoin image" />
-        <a href="https://circle-agency-35d27e.webflow.io/projects/dashcoin"
-          >Learn More</a
-        >
-      </div>
-      <div>
-        <h2>Vectorify</h2>
-        <p>User Experience Design</p>
-        <img src="/assets/Rectangle 3.png" alt="vectorify image" />
-        <a href="https://circle-agency-35d27e.webflow.io/projects/vectorify"
-          >Learn More</a
-        >
-      </div>
-    </section>
-    <section>
-      <h2>Hear What Our Clients Have to Say</h2>
-      <h3>
+    <section id="testimonial">
+      <h3>Hear What Our Clients Have to Say</h2>
+      <p class="testimonial-text body-medium">
         "Circle helped us through every stage of our startup. We really enjoyed
         working with you."
       </h3>
-      <img src="/assets/Character 1.png" alt="image character 1" />
-      <img src="/assets/Character 2.png" alt="image character 2" />
-      <img src="/assets/Character 3.png" alt="image character 3" />
-      <img src="/assets/Character 4.png" alt="image character 4" />
-      <p>Kristin Watson</p>
-      <p>Booking.com</p>
-      <img src="/assets/Ellipse 24.png" alt="foto Ellipse" />
-    </section>
-    <section>
-      <h2>Our Services</h2>
-      <div>
-        <h3>User Interface Design</h3>
-        <img src="/assets/Icon 1.png" alt="icono pluma" />
-        <p>
-          Circle provides you with a stunning user interface design that is
-          accessible to everyone.
-        </p>
-        <a href="">Learn More</a>
+      <div class="memojis">
+        <img
+          src="/assets/testimonial-section/memoji-1.png"
+          alt="image character 1"
+        />
+        <img
+        src="/assets/testimonial-section/memoji-2.png"
+          alt="image character 2"
+        />
+        <img
+        src="/assets/testimonial-section/memoji-3.png"
+          alt="image character 3"
+        />
+        <img
+        src="/assets/testimonial-section/memoji-4.png"
+          alt="image character 4"
+        />
       </div>
-      <div>
-        <h3>User Experience Design</h3>
-        <img src="/assets/Icon 2.png" alt="icono flecha" />
-        <p>
-          Circle always focuses on delivering the best user experience to your
-          customers.
-        </p>
-        <a href="">Learn More</a>
-      </div>
-      <div>
-        <h3>Application Development</h3>
-        <img src="/assets/Icon 3.png" alt="icono file" />
-        <p>
-          We develop high-quality mobile and web applications using the latest
-          technology stack.
-        </p>
-        <a href="">Learn More</a>
+      <div class="testimonial-person">
+        <div>
+          <p class="testimonial-person-name">Kristin Watson</p>
+          <p class="testimonial-person-company caption-2-text">Booking.com</p>
+        </div>
+        <img src="/assets/testimonial-section/profile-cropped.png" alt="Kristin Watson profile picture" />
       </div>
     </section>
-    <section>
-      <h2>Do you have any questions?</h2>
-      <p>Let us help you!</p>
-      <input type="email" placeholder="Enter your email" />
-      <button>Suscribe</button>
+    <section id="services">
+      <h3>Our Services</h3>
+      <div class="services">
+        <div class="service">
+          <div class="service-icon">
+            <img src="/assets/services-section/icons/1.svg" alt="icono pluma" />
+          </div>
+          <div class="service-type body-medium">User Interface Design</div>
+          <p class="body-regular">
+            Circle provides you with a stunning user interface design that is
+            accessible to everyone.
+          </p>
+          <a class="headline-regular" href="">Learn More</a>
+        </div>
+        <div class="service">
+          <div class="service-icon">
+            <img src="/assets/services-section/icons/2.svg" alt="icono flecha" />
+          </div>
+          <div class="service-type body-medium">User Experience Design</div>
+          <p>
+            Circle always focuses on delivering the best user experience to your
+            customers.
+          </p>
+          <a  class="headline-regular" href="">Learn More</a>
+        </div>
+        <div class="service">
+          <div class="service-icon">
+            <img src="/assets/services-section/icons/3.svg" alt="icono code" />
+          </div>
+          <div class="service-type body-medium">Application Development</div>
+          <p>
+            We develop high-quality mobile and web applications using the latest
+            technology stack.
+          </p>
+          <a  class="headline-regular" href="">Learn More</a>
+        </div>
+      </div>
     </section>
-    <footer>
-      <h2>Circle</h2>
-      <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
-      <a href="">Team</a>
-      <a href="">Press</a>
-      <a href="">Services</a>
-      <a href="">Projects</a>
-      <a href="">About Us</a>
-      <a href="">Privacy Policy</a>
+    <section id="questions">
+        <h3>Do you have any questions?</h3>
+        <p class="body-regular">Let us help you!</p>
+      <div class="email-suscribe">
+        <input type="email" placeholder="Enter your email" />
+        <button class="button-subscribe headline-medium">Subscribe</button>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-circle">
+        <img src="/assets/project-assets/logos/circle.svg" alt="circle-logo" />
+        <p class="headline-regular">2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+      </div>
+      <div class="footer-links">
+        <a class="headline-regular" href="#">Team</a>
+        <a class="headline-regular" href="#">Press</a>
+        <a class="headline-regular" href="#">Services</a>
+        <a class="headline-regular" href="#">Projects</a>
+        <a class="headline-regular" href="#">About Us</a>
+        <a class="headline-regular" href="#">Privacy Policy</a>
+      </div>
     </footer>
   </body>
 </html>
