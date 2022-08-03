@@ -5,23 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&family=Roboto+Condensed:ital,wght@0,700;1,400&family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body>
-    <nav class="navbar">
-      <img class="logo" src="/assets/Circle logo.png" alt="circle logo" />
-      <div class="nav-a">
-        <a href="https://circle-agency-35d27e.webflow.io/">Home</a>
-        <a href="https://circle-agency-35d27e.webflow.io/">Projects</a>
-        <a href="https://circle-agency-35d27e.webflow.io/">Services</a>
-      </div>
-      <button class="button-nav">Contact Us</button>
+  <body class="body-regular">
+    <nav>
+      <img class="logo" src="/assets/logos/circle.svg" alt="circle logo" />
+      <ul>
+        <li>
+          <a class="active" href="https://circle-agency-35d27e.webflow.io/"
+            >Home</a
+          >
+        </li>
+        <li><a href="https://circle-agency-35d27e.webflow.io/">Projects</a></li>
+        <li class="last">
+          <a href="https://circle-agency-35d27e.webflow.io/">Services</a>
+        </li>
+      </ul>
+      <button class="button-primary button-contact">Contact Us</button>
     </nav>
     <section>
       <h2>Contat Us</h2>
@@ -35,5 +41,21 @@
       <input type="message" placeholder="Write your message here..." />
       <button>Submit</button>
     </section>
+    <footer>
+      <div class="footer-circle">
+        <img src="/assets/project-assets/logos/circle.svg" alt="circle-logo" />
+        <p class="headline-regular">
+          2972 Westheimer Rd. Santa Ana, Illinois 85486
+        </p>
+      </div>
+      <div class="footer-links">
+        <a class="headline-regular" href="#">Team</a>
+        <a class="headline-regular" href="#">Press</a>
+        <a class="headline-regular" href="#">Services</a>
+        <a class="headline-regular" href="#">Projects</a>
+        <a class="headline-regular" href="#">About Us</a>
+        <a class="headline-regular" href="#">Privacy Policy</a>
+      </div>
+    </footer>
   </body>
 </html>

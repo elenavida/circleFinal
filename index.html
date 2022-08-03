@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,15 +15,21 @@
   </head>
   <body class="body-regular">
     <nav>
-      <img class="logo" src="/assets/Circle logo.png" alt="circle logo" />
+      <img class="logo" src="/assets/logos/circle.svg" alt="circle logo" />
       <ul>
-        <li><a class="active" href="https://circle-agency-35d27e.webflow.io/">Home</a></li>
+        <li>
+          <a class="active" href="https://circle-agency-35d27e.webflow.io/"
+            >Home</a
+          >
+        </li>
         <li><a href="https://circle-agency-35d27e.webflow.io/">Projects</a></li>
-        <li><a href="https://circle-agency-35d27e.webflow.io/">Services</a></li>
-      </div>
-      <button class="button-contact">Contact Us</button>
+        <li class="last">
+          <a href="https://circle-agency-35d27e.webflow.io/">Services</a>
+        </li>
+      </ul>
+      <button class="button-primary button-contact">Contact Us</button>
     </nav>
-    <section class="hero-content">
+    <section id="hero">
       <div class="hero-text">
         <h1>Empower Your Business With Stunning Design!</h1>
         <p>
@@ -31,27 +37,31 @@
           develop astonishing websites and mobile apps.
         </p>
         <div>
-          <button class="button-touch headline-medium">Get in touch</button>
+          <button class="button-primary button-touch">Get in touch</button>
           <button class="button-work headline-medium">See our work</button>
         </div>
       </div>
       <div class="hero-images">
         <div class="hero-guy">
-          <img src="assets/Hero Image.png" alt="Hero Image" />
+          <img src="/assets/hero-section/hero-image.png" alt="Hero Image" />
         </div>
-        <div class="hero-image1">
-          <img src="/assets/Card 1.png" alt="card1" />
-        </div>
-        <div class="hero-image2">
-          <img src="assets/Card 2.png" alt="card2" />
-        </div>
+        <img
+          class="hero-image1"
+          src="/assets/hero-section/card-1.png"
+          alt="card1"
+        />
+        <img
+          class="hero-image2"
+          src="assets/hero-section/card-2.png"
+          alt="card2"
+        />
       </div>
     </section>
-    <section class="client-logos">
+    <section id="client-logos">
       <img
-        class="logo-airbb"
+        class="logo-airbnb"
         src="/assets/project-assets/logos/airbnb-logo.svg"
-        alt="logo-airbb"
+        alt="logo-airbnb"
       />
       <img
         class="logo-google"
@@ -79,60 +89,84 @@
       <div class="projects">
         <div class="project">
           <img src="/assets/Rectangle 1.png" alt="simplify image" />
-          <div class="project-title body-medium">Simplify</div>
-          <p class="headline-regular">UI Design & App Development</p>
-          <a href="https://circle-agency-35d27e.webflow.io/projects/simplify"
-            >Learn More</a
-          >
+          <div class="project-text">
+            <div class="project-title body-medium">Simplify</div>
+            <p class="project-description headline-regular">
+              UI Design & App Development
+            </p>
+            <a
+              class="headline-regular"
+              href="https://circle-agency-35d27e.webflow.io/projects/simplify"
+              >Learn More</a
+            >
+          </div>
         </div>
         <div class="project">
           <img src="/assets/Rectangle 2.png" alt="dashcoin image" />
-          <div class="project-title body-medium">Dashcoin</div>
-          <p class="headline-regular">Web Development</p>
-          <a href="https://circle-agency-35d27e.webflow.io/projects/dashcoin"
-            >Learn More</a
-          >
+          <div class="project-text">
+            <div class="project-title body-medium">Dashcoin</div>
+            <p class="project-description headline-regular">Web Development</p>
+            <a
+              class="headline-regular"
+              href="https://circle-agency-35d27e.webflow.io/projects/dashcoin"
+              >Learn More</a
+            >
+          </div>
         </div>
         <div class="project">
           <img src="/assets/Rectangle 3.png" alt="vectorify image" />
-          <div class="project-title body-medium">Vectorify</div>
-          <p class="headline-regular">User Experience Design</p>
-          <a href="https://circle-agency-35d27e.webflow.io/projects/vectorify"
-            >Learn More</a
-          >
+          <div class="project-text">
+            <div class="project-title body-medium">Vectorify</div>
+            <p class="project-description headline-regular">
+              User Experience Design
+            </p>
+            <a
+              class="headline-regular"
+              href="https://circle-agency-35d27e.webflow.io/projects/vectorify"
+              >Learn More</a
+            >
+          </div>
         </div>
       </div>
     </section>
     <section id="testimonial">
-      <h3>Hear What Our Clients Have to Say</h2>
+      <h3>Hear What Our Clients Have to Say</h3>
       <p class="testimonial-text body-medium">
         "Circle helped us through every stage of our startup. We really enjoyed
         working with you."
-      </h3>
-      <div class="memojis">
-        <img
-          src="/assets/testimonial-section/memoji-1.png"
-          alt="image character 1"
-        />
-        <img
-        src="/assets/testimonial-section/memoji-2.png"
-          alt="image character 2"
-        />
-        <img
-        src="/assets/testimonial-section/memoji-3.png"
-          alt="image character 3"
-        />
-        <img
-        src="/assets/testimonial-section/memoji-4.png"
-          alt="image character 4"
-        />
-      </div>
+      </p>
       <div class="testimonial-person">
+        <img
+          src="/assets/testimonial-section/profile-cropped.png"
+          alt="Kristin Watson profile picture"
+        />
         <div>
           <p class="testimonial-person-name">Kristin Watson</p>
           <p class="testimonial-person-company caption-2-text">Booking.com</p>
         </div>
-        <img src="/assets/testimonial-section/profile-cropped.png" alt="Kristin Watson profile picture" />
+      </div>
+
+      <div class="memojis">
+        <img
+          class="memoji-1"
+          src="/assets/testimonial-section/memoji-1.png"
+          alt="image character 1"
+        />
+        <img
+          class="memoji-2"
+          src="/assets/testimonial-section/memoji-2.png"
+          alt="image character 2"
+        />
+        <img
+          class="memoji-3"
+          src="/assets/testimonial-section/memoji-3.png"
+          alt="image character 3"
+        />
+        <img
+          class="memoji-4"
+          src="/assets/testimonial-section/memoji-4.png"
+          alt="image character 4"
+        />
       </div>
     </section>
     <section id="services">
@@ -151,14 +185,17 @@
         </div>
         <div class="service">
           <div class="service-icon">
-            <img src="/assets/services-section/icons/2.svg" alt="icono flecha" />
+            <img
+              src="/assets/services-section/icons/2.svg"
+              alt="icono flecha"
+            />
           </div>
           <div class="service-type body-medium">User Experience Design</div>
           <p>
             Circle always focuses on delivering the best user experience to your
             customers.
           </p>
-          <a  class="headline-regular" href="">Learn More</a>
+          <a class="headline-regular" href="">Learn More</a>
         </div>
         <div class="service">
           <div class="service-icon">
@@ -169,22 +206,25 @@
             We develop high-quality mobile and web applications using the latest
             technology stack.
           </p>
-          <a  class="headline-regular" href="">Learn More</a>
+          <a class="headline-regular" href="">Learn More</a>
         </div>
       </div>
     </section>
-    <section id="questions">
-        <h3>Do you have any questions?</h3>
-        <p class="body-regular">Let us help you!</p>
-      <div class="email-suscribe">
+    <section id="newsletter">
+      <h3>Do you have any questions?</h3>
+      <p class="body-regular">Let us help you!</p>
+      <div class="email-subscribe">
+        <img class="icon-mail" src="/assets/newsletter/icon/mail.svg" />
         <input type="email" placeholder="Enter your email" />
-        <button class="button-subscribe headline-medium">Subscribe</button>
+        <button class="button-subscribe button-primary">Subscribe</button>
       </div>
     </section>
-    <footer class="footer">
+    <footer>
       <div class="footer-circle">
         <img src="/assets/project-assets/logos/circle.svg" alt="circle-logo" />
-        <p class="headline-regular">2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+        <p class="headline-regular">
+          2972 Westheimer Rd. Santa Ana, Illinois 85486
+        </p>
       </div>
       <div class="footer-links">
         <a class="headline-regular" href="#">Team</a>
